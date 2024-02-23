@@ -1,0 +1,15 @@
+pipeline {
+    agent any 
+    stages {
+        stage('build') {
+            steps {
+                echo 'building frontend images' 
+            }
+        }
+        stage('push') {
+            steps {
+                echo 'pushing frontend images' 
+            }
+        }
+    }
+}
